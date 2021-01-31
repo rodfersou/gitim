@@ -86,6 +86,8 @@ Version: {__version__}
 
         get_repos = g.get_organization(args.org).get_repos if args.org else g.get_user().get_repos
         for repo in get_repos():
+            if not args.org and repo.owner != g.get_user():
+                continue
             if args.noforks and repo.fork:
                 print(u'Repo "{repo.full_name}" is a fork, skipping'.format(repo=repo))
             elif not path.exists(join(repo.name)):
