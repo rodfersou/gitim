@@ -23,4 +23,9 @@ if __name__ == '__main__':
         license='MIT',
         install_requires=['pygithub'],
         py_modules=['gitim']
+        entry_points={
+            'console_scripts': [
+                'gitim = gitim.gitim:clone_main',
+            ],
+        },
     )

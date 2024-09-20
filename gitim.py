@@ -108,6 +108,6 @@ Version: {__version__}
         print(u'FIN')
 
 
+gitim = Gitim()
 if __name__ == '__main__':
-    gitim = Gitim()
     gitim.clone_main()
