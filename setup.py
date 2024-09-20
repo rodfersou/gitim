@@ -25,7 +25,7 @@ if __name__ == '__main__':
         py_modules=['gitim']
         entry_points={
             'console_scripts': [
-                'gitim = gitim.gitim:clone_main',
+                'gitim = gitim:clone_main',
             ],
         },
     )
