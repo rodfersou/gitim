@@ -22,7 +22,7 @@ if __name__ == '__main__':
         version=__version__,
         license='MIT',
         install_requires=['pygithub'],
-        py_modules=['gitim']
+        py_modules=['gitim'],
         entry_points={
             'console_scripts': [
                 'gitim = gitim:clone_main',
